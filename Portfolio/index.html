@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Robson Burns Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous">
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Code+Pro:wght@400;900&display=swap" rel="stylesheet"> 
+
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+
+    <!-- Navigation-->
+    <body>
+        <header>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="navigation"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Robson Burns</strong>
+            </h1>
+            <p class="section_subtitle section__subtitle--intro">Software Developer</p>
+            <img src="images/Robson Burns.png" alt="a picture of Robson Burns" class="intro__img">
+        </section>
+
+        <!-- My Services -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I Do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>University</h3>
+                    <p>Currently I am attending Sheffield Hallam University, as a computer science student in my 3rd and final year. 
+                        Throughout my time in education, I have found myself challenged and overcome a multitude of problems concerning 
+                        my assignments, all whilst enjoying the content of the course, making sure that my final version is worthy of the 
+                        highest grades available.</p>
+                </div>
+
+                <div class="service">
+                    <h3>Self-Learning Projects</h3>
+                    <p>Whilst I have had free time from my studies at University, I have found myself learning new skills and with those 
+                        skills have started to make projects. Most of these projects mentioned are linked with learning a new programme or 
+                        a new language, and due to this I have found myself spending hours learning about new things and creating some projects 
+                        that I am proud of.</p>
+                </div>
+            </div>
+            <a href="#work" class="btn">My Work</a>
+        </section>
+
+        <!-- About Me -->
+        <section class="about-me" id="about">
+            <h2 class="section__title sectiont__title--about">Who Am I</h2>
+            <p class="section__subtitle section__subtitle--about">Software Developer From Sheffield</p>
+
+            <div class="about-me__body">
+                <p>Throughout my education and employment, I have demonstrated high levels of motivation, work ethics, this has
+                    been demonstrated by my continued dedication and excellent attendance and my ability to finish tasks to competition,
+                    I have also achieved the highest grades in my BTEC extended diploma. I pride myself on arriving early to my university 
+                    classes, and I consider myself to be reliable, punctual, and hardworking, this can be seen throughout all my assignments.</p>
+                <p>I enjoy my time at home on my computer as I am an avid gamer, I particularly enjoyed being part of the eSports society, 
+                    playing tactical games. With others from my University course, I also dabbled in Unity over the start of the summer. 
+                    Coding is a passion I pursue and enjoy seeing the programmes that I have worked on operating with minimal bugs, by having 
+                    patience while removing any issues.</p>
+                <p>I also enjoy socialising with my friends, this would include visits to the cinema and other activities. Photography is a
+                     hobby when I have the free time, I take pleasure in the landscape views and have moved into more creative photography.</p>
+            </div>
+
+            <img src="images/robson on holiday.JPG" alt="Robson on Hoilday" class="about-me__img">
+        </section>
+
+        <!-- My Work -->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">My Work</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+
+            <div class="portfolio">
+                <a href="portfolio-items/Portfolio.html" class="portfolio__item">
+                    <img src="images/Portfolio.jpg" alt="Picture of Portfolio" class="portfolio__img">
+                </a>
+
+                <a href="portfolio-items/WhereIsMyCar.html" class="portfolio__item">
+                    <img src="images/WhereIsMyCar.jpg" alt="Picture of WhereIsMyCar Logo" class="portfolio__img">
+                </a>
+            </div>
+            
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <a class="footer__link" href="mailto:robson.burns@yahoo.co.uk">robson.burns@yahoo.co.uk</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/robson-burns-38b10b1b8/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/Roby109" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="JavaScript/Index.js"></script>
+
+    </body>
+</html>
