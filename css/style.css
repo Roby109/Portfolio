@@ -467,6 +467,19 @@ header {
     display: block;
 }
 
+.project__link:hover {
+    opacity: .7;
+}
+
+.project__link {
+    color:var(--clr-light);
+    margin: 2em 0 0;
+    padding: 0;
+    justify-content: center;
+    display:flex;
+    text-decoration: none;
+}
+
 /*footer*/
 
 .footer {
