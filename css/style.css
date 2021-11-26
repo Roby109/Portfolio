@@ -117,7 +117,7 @@ header {
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 100;
+    z-index: 98;
 
     transform: translateX(100%);
     transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
@@ -153,7 +153,7 @@ header {
     position: fixed;
     right: 1em;
     top: 1em;
-    z-index: 101;
+    z-index: 99;
 }
 
 .nav-open .nav {
@@ -395,12 +395,12 @@ header {
 }
 
 .portfolio__img {
-    
     background: var(--clr-accent);
     overflow: hidden;
     margin-left: auto;
-    margin-right: auto;transition: transform 750ms cubic-bezier(.5, 0, .5, 1),
-    opacity 250ms linear;
+    margin-right: auto;
+    transition: transform 750ms cubic-bezier(.5, 0, .5, 1);
+    opacity: 250ms linear;
 }
 
 .portfolio__img:hover {
@@ -408,24 +408,25 @@ header {
     opacity: .75;
 }
 
-.popup .overlay {
+.modal {
     position:fixed;
     top:0px;
     left:0px;
     width:100vw;
     height:100vh;
-    z-index:1;
-    display:none;
+    display: none;
+    overflow: overflow;
+    color: var(--clr-light);
+    background-color: var(--clr-dark);
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
 }
 
-.popup .content {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    background:var(--clr-dark);
-    width:1fr;
-    height:600px;
+.modal-window {
+    position: relative;
+    background-color: var(--clr-dark);
+    width:50%;
+    height:auto;
     z-index:2;
     text-align: center;
     padding:20px;
@@ -434,31 +435,36 @@ header {
     border-color: var(--clr-accent);
     border-radius: 20px;
     border-width: thick;
-}
-
-.popup .close-btn {
-    cursor:pointer;
-    position: fixed;
-    right:20px;
-    top:20px;
-    width:20px;
-    height:20px;
-    color: #fff;
-    font-size:25px;
-    font-weight:600;
-    line-height:30px;
-    text-align: center;
-    border-radius: 50%;
-}
-
-.popup.active .overlay {
-    display:block;
-}
-
-.popup.active .content {
-    transform: all 300ms ease-in-out;
-    transform: translate(-50%, -50%) scale(1);
+    margin: 10% auto;
     overflow: hidden;
+}
+
+.modal-img {
+    max-height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color:var(--clr-light);
+    height: 30px;
+    width: 30px;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.close:hover,
+.close:focus {
+    color: var(--clr-accent);
+    cursor: pointer;
+}
+
+.open {
+    display: block;
 }
 
 /*footer*/
