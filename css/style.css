@@ -423,10 +423,11 @@ header {
 }
 
 .modal-window {
-    position: relative;
+    position: fixed;
+    top: 50% ;
+    left: 50% ;
+    transform: translate(-50% , -50% );
     background-color: var(--clr-dark);
-    width:50%;
-    height:auto;
     z-index:2;
     text-align: center;
     padding:20px;
@@ -435,7 +436,7 @@ header {
     border-color: var(--clr-accent);
     border-radius: 20px;
     border-width: thick;
-    margin: 10% auto;
+    margin: auto;
     overflow: hidden;
 }
 
